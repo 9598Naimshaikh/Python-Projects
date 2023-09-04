@@ -1,36 +1,26 @@
 # create a calculater operators,,,,, Addition +, Substraction -, Multiplication *, division /, Exponential **, module %, Floor division //,
 
-def add(a, b):
-    return a + b
 
-def sub(a, b):
-    return a - b
-
-def mul(a, b):
-    return a * b
-
-def div(a, b):
-    return a / b
-
-def exp(a, b):
-    return a ** b
-
-def mod(a, b):
-    return a % b
-
-def flr_div(a, b):
-    return a // b
+add = lambda a, b: a + b
+sub = lambda a, b: a - b
+mul = lambda a, b: a * b
+div = lambda a, b: a / b
+exp = lambda a, b: a**b
+mod = lambda a, b: a % b
+flr_div = lambda a, b: a // b
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print("Welcome to Calculator Program...!")
     while True:
-        print('1. Add\n2. Subtract\n3. Multiply\n4. divide\n5. Exponential\n6. Module\n7. Floor Divide')
+        print(
+            "1. Add\n2. Subtract\n3. Multiply\n4. divide\n5. Exponential\n6. Module\n7. Floor Divide"
+        )
         try:
-            choice = int(input('Enter choice (1,2,3,4,5,6,7): '))
+            choice = int(input("Enter choice (1,2,3,4,5,6,7): "))
 
-            num1 = int(input('\nEnter a first number: '))
-            num2 = int(input('Enter a second number: '))
+            num1 = int(input("\nEnter a first number: "))
+            num2 = int(input("Enter a second number: "))
 
             if choice == 1:
                 print(num1, "+", num2, "=", add(num1, num2))
@@ -48,12 +38,12 @@ if __name__ == '__main__':
                 print(num1, "//", num2, "=", flr_div(num1, num2))
 
             else:
-                print('Invalid Value Please try again....!')
+                print("Invalid Value Please try again....!")
 
             # exit arguments programm...
-            user_arg = input('Do you want to exit it (y/n): ')
-            if user_arg.lower() == 'y':
-                print('\nThanks for quiting the programm...!')
+            user_arg = input("Do you want to exit it (y/n): ")
+            if user_arg.lower() == "y":
+                print("\nThanks for quiting the programm...!")
                 break
 
         except ValueError as ve:
