@@ -10,7 +10,7 @@ def palindrome_checker(word):
     word = word.lower()  # convert to all lower case.
     remove_punc = word.translate(str.maketrans("", "", string.punctuation)).split() #remove punctuation and convert to string to remove space.
 
-    modify_word = "".join(remove_punc)
+    modify_word = "".join(remove_punc) # join to as a string.
     reverse_word = modify_word[::-1]  # reverse the string.
 
     print(f"Modify_word: {modify_word}")
