@@ -16,7 +16,7 @@ class Library(object):
 
   def show_books(self):
     print('\nAvailable books in this Library...')
-    for index, book in enumerate(self.books):
+    for index, book in enumerate(self.books, start=1):
       print(index, book)
 
 
