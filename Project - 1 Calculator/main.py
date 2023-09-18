@@ -5,16 +5,16 @@ add = lambda a, b: a + b
 sub = lambda a, b: a - b
 mul = lambda a, b: a * b
 div = lambda a, b: a / b
-exp = lambda a, b: a**b
+exp = lambda a, b: a ** b
 mod = lambda a, b: a % b
 flr_div = lambda a, b: a // b
 
-
 if __name__ == "__main__":
     print("Welcome to Calculator Program...!")
+    print('---------------------------------')
     while True:
         print(
-            "1. Add\n2. Subtract\n3. Multiply\n4. divide\n5. Exponential\n6. Module\n7. Floor Divide"
+            "1. Add\n2. Subtract\n3. Multiply\n4. divide\n5. Exponential\n6. Module\n7. Floor Divide\n"
         )
         try:
             choice = int(input("Enter choice (1,2,3,4,5,6,7): "))
