@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    overflow: hidden;
+}
+header .navbar{
+    width: 1100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+header .logo{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap: 10px;
+    font-size: 20px;
+}
+header .logo img{
+    width: 30px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+header .navbar .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+header .navbar .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+header .navbar .btns .login{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+header .navbar .btns .sign{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    background: linear-gradient(9deg, #ffaffb, #ff006f);
+    color: white;
+    font-weight: 600;
+}
+header .navbar .btns .login:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+header .navbar .btns .sign:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background: linear-gradient(9deg, #ff006f, #ffaffb);
+}
+
+main{
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+main .container{
+    min-width: 1100px;
+    background: #ffff;
+    min-height: 80vh;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 50px 50px; */
+}
+
+main .container .left-content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+main .container .right-content{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container .left-content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+main .container .left-content h1{
+    font-size: 30px;
+    color: rgb(57, 57, 57);
+}
+main .container .left-content form input{
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    outline-width: 1px;
+    outline-color: rgba(59, 59, 59, 0.3);
+    font-size: 16px;
+    background-color: white;
+}
+main .container .left-content form label{
+    color: gray;
+}
+
+main .container .left-content form button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(9deg, #ff006f, #ffaffb);
+    color: white;
+    cursor: pointer;
+}
+main .container .left-content form button:hover{
+    background: linear-gradient(9deg, #ffaffb, #ff006f);
+}
+
+main .container .right-content a{
+    text-decoration: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    color: #333;
+}
+main .container .right-content a:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+main .container .right-content a ion-icon{
+    font-size: 30px;
+}
+main .container .right-content h2{
+    color: rgb(57, 57, 57);
+}

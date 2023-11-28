@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <link rel="shortcut icon" href="/static/images/qr-code.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">
+                <!-- <ion-icon name="qr-code-outline"></ion-icon> -->
+                <img src="/static/images/qr-code.png" alt="">
+                <span>QR-Code-Generator</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Codes</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="items">
+                <div class="btns">
+                    <a href="#" class="login">Login</a>
+                    <a href="#" class="sign">Sign Up</a>
+                </div>
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="left-content">
+                <h1>QR Code Generator</h1>
+                <form method="post" action="/">
+                    <label for="data_to_encode">Please enter url which do you want to QRCode.!</label>
+                    <input type="text" id="data_to_encode" name="data_to_encode" required placeholder="https://">
+                    <button type="submit">Generate QR Code</button>
+                </form>
+            </div>
+
+            <div class="right-content">
+                {% if data_to_encode %}
+                <h2>Generated QR Code:</h2>
+                 <img src="data:image/png;base64,{{ qr_code }}" alt="QR Code">
+                <br>
+                <a href="{{ url_for('download_qrcode', data_type=data_type, data=qr_code) }}" download="qrcode.png">
+                    <ion-icon name="arrow-down-circle"></ion-icon>
+                    <span>Download QR Code</span>
+                </a>
+                {% endif %}
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

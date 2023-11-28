@@ -1,0 +1,149 @@
+@media screen and (max-width: 1100px) {
+    header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        border-bottom: 2px solid rgb(132 129 129 / 10%);
+        overflow: hidden;
+    }
+
+    header .navbar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 2.5px;
+        background-color: #333;
+        transform: translateY(-9px);
+    }
+
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 2.5px;
+        background-color: #333;
+        transform: translateY(9px);
+        box-shadow: 0 -9px 0 #333;
+    }
+
+    main .container{
+        min-width: 800px;
+        background: #ffff;
+        min-height: 80vh;
+        padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding: 50px 50px; */
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    header .navbar .btns{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    main .container .left-content h1{
+        font-size: 20px;
+        color: rgb(57, 57, 57);
+    }
+    main .container .left-content form input{
+        width: 70%;
+        padding: 15px 15px;
+        font-size: 14px;
+    }
+
+    main .container .left-content form button{
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    header .logo{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        gap: 10px;
+        font-size: 16px;
+    }
+    header .logo ion-icon{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    main .container{
+        width: 100%;
+        height: 100%;
+        background: #ffff;
+        padding: 10px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 0px 0px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 40px 30px;
+        gap: 20px;
+    }
+
+    main .container .left-content{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 10px;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        border-radius: 15px;
+    }
+    main .container .right-content{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 10px;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+        border-radius: 15px;
+    }
+}
+
